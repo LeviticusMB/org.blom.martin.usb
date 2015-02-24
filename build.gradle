@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.6
+version = '1.0.0'
+mainClassName = "org.blom.martin.usb.ReportDescriptor"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+distTar.dependsOn javadoc
+distZip.dependsOn javadoc
+applicationDistribution.from("build/docs/javadoc/") {
+    into "javadoc"
+}
+    
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
