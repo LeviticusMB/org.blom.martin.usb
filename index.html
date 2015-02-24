@@ -1,55 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>org.blom.martin.usb by LeviticusMB</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="org.blom.martin.usb : Random USB support code">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>org.blom.martin.usb</title>
   </head>
+
   <body>
 
-      <header>
-        <h1>org.blom.martin.usb</h1>
-        <p>Random USB support code</p>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/LeviticusMB/org.blom.martin.usb">View on GitHub</a>
 
-      <div id="banner">
-        <span id="logo"></span>
+          <h1 id="project_title">org.blom.martin.usb</h1>
+          <h2 id="project_tagline">Random USB support code</h2>
 
-        <a href="https://github.com/LeviticusMB/org.blom.martin.usb" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/LeviticusMB/org.blom.martin.usb/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/LeviticusMB/org.blom.martin.usb/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/LeviticusMB/org.blom.martin.usb/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/LeviticusMB/org.blom.martin.usb/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a id="orgblommartinusb" class="anchor" href="#orgblommartinusb" aria-hidden="true"><span class="octicon octicon-link"></span></a>org.blom.martin.usb</h1>
 
-<p>Random USB support code</p>
+<p>Random USB support code in Java. At the moment, just a HID Report
+Descriptor parser which can be used to decode (and encode) raw HID
+messages.</p>
+
+<p>Javadoc <a href="http://leviticusmb.github.io/org.blom.martin.usb/org.blom.martin.usb-1.0.0/javadoc/index.html">here</a>.</p>
+
+<h2>
+<a id="build-and-test" class="anchor" href="#build-and-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build and test</h2>
+
+<div class="highlight highlight-sh"><pre>$ ./gradlew installApp
+$ build/install/org.blom.martin.usb/bin/org.blom.martin.usb 05010902A1010901A100050919012903150025019503750181029501750581010501093009311581257F750895028106C0C0</pre></div>
       </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/LeviticusMB">LeviticusMB</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">org.blom.martin.usb maintained by <a href="https://github.com/LeviticusMB">LeviticusMB</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
+
   </body>
 </html>
